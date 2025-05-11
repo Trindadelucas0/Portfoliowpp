@@ -86,18 +86,19 @@
     </section>
     <SEction id="contatos" class="Contatos">
         <h2 class="contatos-titulos">Entre em Contato</h2>
-        <form class="formulario-contato" id="formulario">
+        <form class="formulario-contato" id="formulario" onsubmit="enviarwhats(event)">
             <div class="grupo-form">
                 <input placeholder="nome" class="campo-form" id="nome">
             </div>
             <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua menssagem" rows="8" id="nome"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua menssagem" rows="8" id="menssagem"></textarea>
             </div>
             
             <button type="submit" class="botao-form"> ENVIAR WHATSAPP</button>
 
         </form>
     </SEction>
+    <script src="index.js"></script>
 </body>
 
 </html>
