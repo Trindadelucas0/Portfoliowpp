@@ -113,64 +113,51 @@ h1 {
   font-size: 1.2rem;
 }
 
-/* Melhorias na seção de projetos */
 .projetos {
   padding: 6rem 2rem;
-  background-color: var(--maisEscuro); /* Adicionado fundo para destacar a seção */
-}
-
-.projetos-titulos {
-  text-align: center;
-  font-size: 2.8rem; /* Aumentado o tamanho da fonte para maior destaque */
-  margin-bottom: 3rem; /* Maior espaçamento para separar o título dos cards */
-  color: var(--primaria); /* Cor primária para maior contraste */
 }
 
 .projetos-caixa {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Melhor responsividade */
-  gap: 2.5rem; /* Aumentado o espaçamento entre os cards */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
+.projetos-titulos {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
 
 .projetos-card {
-  background: rgba(255, 255, 255, 0.08); /* Fundo mais claro para destacar os cards */
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 16px;
-  backdrop-filter: blur(8px); /* Maior desfoque para um efeito mais elegante */
+  backdrop-filter: blur(5px);
   border: 1px solid var(--vidro);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição mais rápida */
+  transition: all 0.5s ease;
 }
-
 .projetos-card:hover {
-  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3); /* Sombra mais suave ao passar o mouse */
-  transform: translateY(-8px) scale(1.02); /* Efeito de elevação mais sutil */
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+  transform: translatey(-10px) scale(1.03);
   cursor: pointer;
 }
-
 .projetos-imagens {
-  height: 200px; /* Altura reduzida para melhor proporção */
+  height: 300px;
   width: 100%;
   object-fit: cover;
-  border-bottom: 1px solid var(--vidro); /* Linha separando imagem do texto */
+  
+}
+.info-projetos {
+  margin-bottom: 15px;
+}
+.paragrafos-projetos {
+  color: rgba(226, 232, 240, 0.8);
 }
 
 .texto-projeto {
   padding: 1.5rem;
-  text-align: center; /* Centralizado para melhor organização */
-}
-
-.info-projetos {
-  font-size: 1.2rem; /* Tamanho ajustado para melhor legibilidade */
-  color: var(--claro);
-  margin-bottom: 1rem;
-}
-
-.paragrafos-projetos {
-  font-size: 1rem; /* Tamanho menor para diferenciar do título */
-  color: rgba(226, 232, 240, 0.8);
-  font-style: italic; /* Estilo para destacar */
 }
 
 .contatos {
